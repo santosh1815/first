@@ -23,13 +23,3 @@ resource "aws_s3_bucket" "b1" {
     Environment = "Dev"
   }
 }
-
-resource "aws_s3_bucket" "b2" {
-  bucket = "tecmax0908201902"
-  acl    = "private"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
